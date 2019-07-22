@@ -1,0 +1,29 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package fabrica;
+
+import productoAbstracto.Automovil;
+import productoAbstracto.Scooter;
+import productos.AutomovilElectrico;
+import productos.ScooterElectrica;
+
+/**
+ *
+ * @author HARGEZ
+ */
+public class FabricaVehiculosElectricos implements FabricaVehiculos{
+
+    @Override
+    public Automovil crearAutomovil(String modelo, String color, int potencia, double espacio) {
+       return new AutomovilElectrico(modelo, color, potencia, espacio);
+    }
+
+    @Override
+    public Scooter crearScooter(String modelo, String color, int potencia) {
+       return new ScooterElectrica(modelo, color, potencia);
+    }
+    
+}
