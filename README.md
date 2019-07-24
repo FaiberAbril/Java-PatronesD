@@ -1,4 +1,4 @@
-# Estudio de Patrones en programción
+# Estudio de Patrones en programación
 Estudio de los patrones de diseño
 
 -Singleto
